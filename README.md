@@ -36,6 +36,7 @@ pip install -r requirement.txt
 
 ![avatar](img/003.png)
 
+源REPO地址： https://github.com/zepen/predict_Lottery_ticket
 =======================修改更新========================
 
 数据源地址更新         。。。OK
