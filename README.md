@@ -39,9 +39,14 @@ pip install -r requirement.txt
 源REPO地址： https://github.com/zepen/predict_Lottery_ticket
 
 ====================================修改更新=====================================
+
 数据源地址更新         。。。OK
+
 https://chart.cp.360.cn/kaijiang/ssq/
+
 兼容数据爬去及处理代码  。。。OK
+
 get_train_data.py
+
 预测结果展示优化       。。。OK
 ![img.png](img.png)
