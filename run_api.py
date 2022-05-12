@@ -79,9 +79,12 @@ def get_predict_result():
     # 拼接结果
     ball_name_list = ["{}_{}".format(name[1], i) for name, i in red_name_list] + [BOLL_NAME[1][1]]
     pred_result_list = red_pred[0].tolist() + blue_pred.tolist()
-    return json.dumps(
-        {b_name: int(res) + 1 for b_name, res in zip(ball_name_list, pred_result_list)}
-    ).encode('utf-8').decode('unicode_escape')
+    r1, r2, r3, r4, r5, r6, b1 = pred_result_list
+    # return "<h1 style='text-align: center;'>预测结果为</h1> </br><h4>红球：{}、{}、{}、{}、{}、{} </h4></br><h4>蓝球：{}</h4>".format(r1, r2, r3, r4, r5, r6, b1)
+    return '<html> <body> <h1 style = "text-align: center;"> 预测结果为 </h1> <br> <h4 style = "text-align: center;"> 红球：<font style="color: red;">{}、{}、{}、{}、{}、{} </font> </h4> <br> <h4 style = "text-align: center;"> 蓝球：<font style="color: blue;">{} </font> </h4> </body> </html>'.format(r1, r2, r3, r4, r5, r6, b1)
+    # return json.dumps(
+    #     {b_name: int(res) + 1 for b_name, res in zip(ball_name_list, pred_result_list)}
+    # ).encode('utf-8').decode('unicode_escape')
 
 
 if __name__ == '__main__':

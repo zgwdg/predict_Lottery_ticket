@@ -4,8 +4,8 @@ Author: BigCat
 """
 import os
 
-URL = "https://datachart.500.com/ssq/history/"
-path = "newinc/history.php?start={}&end="
+URL = "https://chart.cp.360.cn/kaijiang/ssq/"
+path = "lotId=220051&chartType=undefined&spanType=3&span={}_{}&r=0.1195010473229372#roll_132"
 
 BOLL_NAME = [
     ("红球", "red"),
