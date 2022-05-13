@@ -16,7 +16,7 @@ def get_current_number():
     r = requests.get(URL)
     r.encoding = "gb2312"
     soup = BeautifulSoup(r.text, "lxml")
-    current_num = soup.find('tbody',id='data-tab').contents[00].contents[000].text
+    current_num = soup.find('tbody',id='data-tab').contents[00].contents[00].text
     return current_num
 
 
